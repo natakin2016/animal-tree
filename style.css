@@ -1,19 +1,23 @@
-  .axis path,
-  .axis line{
-    fill: none;
-    stroke: black;
-  }
+node {
+        cursor: pointer;
+    }
 
-  .line{
-    fill: none;
-    stroke: blue;
-    stroke-width: 2px;
-  }
+    .node circle {
+      fill: black;
+      stroke: chartreuse;
+      stroke-width: 1px;
+    }
 
-  .tick text{
-    font-size: 12px;
-  }
+    .node text {
+      font: 24px sans-serif;
+   text-shadow: 2px 2px 4px #000000 ;
+    }
 
-  .tick line{
-    opacity: 0.2;
-  }
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 7px;
+    }
+   .col-xs-12{
+       background-color: chartreuse;
+   }

@@ -1,0 +1,19 @@
+{
+  "name": "animal-tree",
+  "version": "1.0.0",
+  "description": "",
+  "main": "init.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natakin2016/animal-tree.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natakin2016/animal-tree/issues"
+  },
+  "homepage": "https://github.com/natakin2016/animal-tree#read-me"
+}

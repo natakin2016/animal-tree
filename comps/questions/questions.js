@@ -1,12 +1,12 @@
 ;(function(){
 
     angular.module('kingdoms') 
-        .component('kingdom',{
-        templateUrl:'comps/kingdom/kingdom.html',
-        controller:KingdomController
+        .component('questions',{
+        templateUrl:'comps/questions/questions.html',
+        controller:questionsController
         }) 
-        function KingdomController() {
-            // determing kingdom
+        function questionsController() {
+            // determing questions
             var creature={
 
             }

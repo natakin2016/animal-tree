@@ -7,6 +7,18 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Home</a>
+    <a href="#">Tree</a>
+    <a href="#">Game of Life</a>
+    <a href="#">More Information</a>
+    </div>
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
     <container>
         <section class="row">
             <div class="col-offset-md-2 col-md-4">
@@ -29,7 +41,9 @@
 
     <!--Routes and Starts-->
     <script src="init.js"></script>
+    <script src="comps/navbar/nav.js"></script>
 
+     
     <!--Components and Services-->
         <!--Services-->
 

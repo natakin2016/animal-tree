@@ -49,7 +49,6 @@
         trait = "acoelomate";
         break;
     }
-    pseudocoelomate: ''
 
 'Do you want your mouth to develop first?'
     if('yes'){

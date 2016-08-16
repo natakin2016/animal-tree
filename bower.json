@@ -1,0 +1,20 @@
+{
+  "name": "animal-tree",
+  "description": "",
+  "main": "init.js",
+  "authors": [
+    "deb bodahl <bodahl.deb@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/natakin2016/animal-tree",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-router": "^0.3.1"
+  }
+}

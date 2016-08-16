@@ -1,3 +1,3 @@
 ;(function(){
-    angular.module('kingdoms', []);
+    angular.module('kingdoms', ['ui.router']);
 }()) 

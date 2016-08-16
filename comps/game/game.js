@@ -7,7 +7,9 @@
         controller:GameController
     }) 
     function GameController(){
-        
+       function makePopulation(seed){
+           
+       }
     }
 
 }());

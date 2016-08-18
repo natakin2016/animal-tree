@@ -6,12 +6,11 @@
     <title>Kingdom Tutor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
-    <!--navbar-->
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-    <!--Nav Bar-->
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a href="#">Home</a>
@@ -20,70 +19,25 @@
         <a ui-sref="gameoflifepage" onclick="closeNav()">Game of Life</a>
         <a ui-sref="moreinfopage" onclick="closeNav()">More Information</a>
     </div>
+
     <ui-view></ui-view>
-
-
-
-    <!--<container>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
-
-<!--Proper Start of HTML-->
-    <container>
-        <a href="game/game.html">Game Demo</a>
-        <section class="row">
-            <!--Tree Component-->
-            <div class="col-offset-md-2 col-md-4">
-                <h1>Tree</h1>
-                <tree></tree>
-            </div>
-            <div class="col-md-4">
-                <!--Questions and GOL-->
-                <h1>Questions</h1>
-                <questions></questions>
-            </div>
-        </section>
-    </container>-->
 
     <!--Scripts Go Below-->
     <!--CDNs-->
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="init.js"></script>
     <script src="app/config/routes.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.bundle.js"></script>
-    <script src="http://d3js.org/d3.v3.js"></script>
-   
+
+
     <!--Pages-->
     <script src="comps/gameoflifepage/gameoflife.js"></script>
     <script src="comps/aboutpage/about.js"></script>
     <script src="comps/moreinfopage/moreinfopage.js"></script>
+    <script src="comps/tree/tree.js"></script>
     <script src="comps/treepage/tree.js"></script>
 
-
-
-    <!--Routes and Starts-->
-
-    <script src="comps/navbar/nav.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.bundle.js"></script>
-        <script src="http://d3js.org/d3.v3.js"></script>
-
-    <!--Routes and Starts-->
-        <script src="init.js"></script>
-        <script src="comps/navbar/nav.js"></script>
-
-
-    <!--Components and Services-->
-    <!--Services-->
-
-    <!--Components-->
-    <script src="comps/kingdom/kingdom.js"></script>
-    <script src="comps/tree/tree.js"></script>
-        <!--Components-->
-            <script src="comps/kingdom/kingdom.js"></script>
-            <script src="comps/tree/tree.js"></script>
 </body>
 
 </html>

@@ -6,7 +6,7 @@
       controller: treepageController
     })
 
-    function treepageController(listService){
+    function treepageController(){
      
     }
 

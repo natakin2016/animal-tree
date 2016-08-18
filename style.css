@@ -65,3 +65,35 @@ node {
       .sidenav {padding-top: 15px;}
       .sidenav a {font-size: 18px;}
     }
+
+    node {
+        cursor: pointer;
+    }
+
+    .node circle {
+      fill: black;
+      stroke: chartreuse;
+      stroke-width: 5px;
+    }
+
+    .node text {
+      font: 20px sans-serif;
+      
+    }
+
+    .link {
+      fill: none;
+      stroke: deeppink;
+      stroke-width: 3px;
+    }
+   .col1{
+       background:  chartreuse;
+       width: 100%;
+   }
+   .top-header{
+     text-align: center;
+   }
+  
+   div.row{
+     width: 100%;
+   }

@@ -10,12 +10,13 @@
         var treeData = [
             {
                 "name": "Ancestral Protist",
+                "img": "https://o.quizlet.com/VmnhnUEg.yiP4Rg0Vhe4Kw_m.png",
                 "parent": "null",
-                "children": [
+                "_children": [
                     {
                         "name": "Parazoa",
                         "parent": "Ancestral Protist",
-                        "children": [
+                        "_children": [
                             {
                                 "name": "sponge",
                                 "parent": "Parazoa"
@@ -25,11 +26,11 @@
                     {
                         "name": "Eumetazoa",
                         "parent": "Ancestral Protist",
-                        "children": [
+                        "_children": [
                             {
                                 "name": "Radiata",
                                 "parent": "Eumetazoa",
-                                "children": [
+                                "_children": [
                                     {
                                         "name": "Ctenophora",
                                         "parent": "Radiata",
@@ -43,11 +44,11 @@
                             {
                                 "name": "Bilateria",
                                 "parent": "Eumetazoa",
-                                "children": [
+                                "_children": [
                                     {
                                         "name": "Acoelomates",
                                         "parent": "Bilateria",
-                                        "children": [
+                                        "_children": [
                                             {
                                                 "name": "flatworms",
                                                 "parent": "Acoelomates"
@@ -57,15 +58,15 @@
                                     {
                                         "name": "Body Cavities",
                                         "parent": "Bilateria",
-                                        "children": [
+                                        "_children": [
                                             {
                                                 "name": "Coelomates",
                                                 "parent": "Body Cavities",
-                                                "children": [
+                                                "_children": [
                                                     {
                                                         "name": "Protosomes",
                                                         "parent": "Coelomates",
-                                                        "children": [
+                                                        "_children": [
                                                             {
                                                                 "name": "Bryoza",
                                                                 "parent": "Protosomes"
@@ -95,7 +96,7 @@
                                                     {
                                                         "name": "Deuterosomes",
                                                         "parent": "Coelomates",
-                                                        "children": [
+                                                        "_children": [
                                                             {
                                                                 "name": "Echinodermata",
                                                                 "parent": "Deuterosomes"
@@ -111,7 +112,7 @@
                                             {
                                                 "name": "Pseudocoelomates",
                                                 "parent": "Body Cavities",
-                                                "children": [
+                                                "_children": [
                                                     {
                                                         "name": "Nemertea",
                                                         "parent": "Pseudocoelomates"
@@ -136,10 +137,8 @@
             }
         ];
 
-        debugger
         this.$onInit = draw;
         function draw() {
-            debugger
             // ************** Generate the tree diagram  *****************
             var margin = { top: 20, right: 20, bottom: 20, left: 230 },
                 width = 3500 - margin.right - margin.left,
@@ -190,7 +189,14 @@
                     .attr("dy", ".35em")
                     .attr("text-anchor", function (d) { return d.children || d._children ? "end" : "start"; })
                     .text(function (d) { return d.name; })
-                    .style("fill-opacity", 1e-6);
+                    .style("fill-opacity", 1e-6)
+                nodeEnter.append("image")
+                    .attr("xlink:href", function (d) { return `${d.img || ''}` })
+                    .attr("x", function (d) { return  d._children ? 0 - (d.name.length * 4) : 0 + (d.name.length * 4)  })
+                    .attr("y", function (d) { return -60 })
+                    .attr("dy", ".35em")
+                    .attr("width", "50")
+                    .attr("height", "50");
 
                 // Transition nodes to their new position.
                 var nodeUpdate = node.transition()
@@ -200,7 +206,11 @@
                     .attr("r", 0)
                     .style("fill", function (d) { return d._children ? "blue" : "#fff"; });
                 nodeUpdate.select("text")
-                    .style("fill-opacity", 1);
+                    .style("fill-opacity", 1)
+                nodeUpdate.select("image")
+                    .style("fill-opacity", 1)
+                    // .attr("x", function (d) { return d.x; })
+                    // .attr("y", function (d) { return d.y; });
 
                 // Transition exiting nodes to the parent's new position.
                 var nodeExit = node.exit().transition()
@@ -210,6 +220,8 @@
 
                 // nodeExit.select("circle")
                 //   .attr("r", 1e-6);
+                nodeExit.select("image")
+                    .style("fill-opacity", 1e-6)
                 nodeExit.select("text")
                     .style("fill-opacity", 1e-6);
 
@@ -244,10 +256,17 @@
                     d.x0 = d.x;
                     d.y0 = d.y;
                 });
+                // start(treeData);
+                // update(root);
             }
 
             // Toggle children on click.
             function click(d) {
+                toggleChildren(d);
+                update(d);
+            }
+
+            function toggleChildren(d) {
                 if (d.children) {
                     d._children = d.children;
                     d.children = null;
@@ -255,7 +274,6 @@
                     d.children = d._children;
                     d._children = null;
                 }
-                update(d);
             }
 
         }

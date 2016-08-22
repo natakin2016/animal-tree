@@ -10,7 +10,7 @@ node {
 
     .node text {
       font: 24px sans-serif;
-   text-shadow: 2px 2px 4px #000000 ;
+   /*text-shadow: 2px 2px 4px #000000 ;*/
     }
 
     .link {
@@ -19,13 +19,13 @@ node {
       stroke-width: 7px;
     }
    .col-xs-12{
-       background-color: chartreuse;
+       /*background-color: chartreuse;*/
    }
 
    /*Navbar*/
-   body {
-    font-family: "Lato", sans-serif;
-    }
+    body {
+      font-family: "Lato", sans-serif;
+      }
 
     .sidenav {
         height: 100%;

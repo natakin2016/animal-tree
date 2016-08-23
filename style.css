@@ -23,9 +23,9 @@ node {
    }
 
    /*Navbar*/
-    body {
-      font-family: "Lato", sans-serif;
-      }
+   body {
+    font-family: "Lato", sans-serif;
+    }
 
     .sidenav {
         height: 100%;
@@ -72,7 +72,7 @@ node {
 
     .node circle {
       fill: black;
-      stroke: chartreuse;
+      /*stroke: chartreuse;*/
       stroke-width: 5px;
     }
 
@@ -87,7 +87,7 @@ node {
       stroke-width: 3px;
     }
    .col1{
-       background:  chartreuse;
+       /*background:  chartreuse;*/
        width: 100%;
    }
    .top-header{

@@ -111,3 +111,31 @@ node {
    div.row{
      width: 100%;
    }
+   .buttdiv{
+       padding: 1em;
+      
+   }
+   .divide{
+       height: 4em;
+       margin-top: 2em;
+       margin-bottom: 2em;
+       background: black;
+      
+      
+   }
+   .treepage{
+       background-color:white;
+      
+   }
+   
+   /*background around expanding tree*/
+   #putithere{
+       background-color: white;
+   }
+   .btn-block{
+       background: linear-gradient(to bottom,  #267c99 50%,#007299 50%);
+   }
+   svg{
+      
+   }
+  

@@ -10,17 +10,21 @@ node {
 
     .node text {
       font: 24px sans-serif;
-   text-shadow: 2px 2px 4px #000000 ;
+ 
     }
+
+     .node text:hover{
+         font-weight: bold;
+     }
 
     .link {
       fill: none;
       stroke: #ccc;
       stroke-width: 7px;
     }
-   .col-xs-12{
+   /*.col-xs-12{
        background-color: chartreuse;
-   }
+   }*/
 
    /*Navbar*/
    body {
@@ -83,7 +87,7 @@ node {
 
     .link {
       fill: none;
-      stroke: deeppink;
+      stroke: lightgray;
       stroke-width: 3px;
     }
    .col1{

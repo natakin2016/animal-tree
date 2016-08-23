@@ -10,7 +10,11 @@ node {
 
     .node text {
       font: 24px sans-serif;
+<<<<<<< HEAD
  
+=======
+   /*text-shadow: 2px 2px 4px #000000 ;*/
+>>>>>>> 735ee8a203736e6cc9c8ee9e7b6c87e0b7c68010
     }
 
      .node text:hover{
@@ -22,14 +26,20 @@ node {
       stroke: #ccc;
       stroke-width: 7px;
     }
+<<<<<<< HEAD
    /*.col-xs-12{
        background-color: chartreuse;
    }*/
+=======
+   .col-xs-12{
+       /*background-color: chartreuse;*/
+   }
+>>>>>>> 735ee8a203736e6cc9c8ee9e7b6c87e0b7c68010
 
    /*Navbar*/
-   body {
-    font-family: "Lato", sans-serif;
-    }
+    body {
+      font-family: "Lato", sans-serif;
+      }
 
     .sidenav {
         height: 100%;

@@ -10,18 +10,20 @@
                var treeData = [
             {
                 "name": "Ancestral Protist",
-                "img": "https://o.quizlet.com/VmnhnUEg.yiP4Rg0Vhe4Kw_m.png",
+                "img": "http://www.biology-resources.com/images/amoeba-feeding-big.jpg",
                 "parent": "null",
                 "_children": [
                     {
                         "name": "Parazoa",
+                        "img": "https://cdn.vectorstock.com/i/thumb-large/74/72/6917472.jpg",
                         "parent": "Ancestral Protist",
-                        "_children": [
-                            {
-                                "name": "sponge",
-                                "parent": "Parazoa"
-                            }
-                        ]
+                        // "_children": [
+                        //     {
+                        //         "name": "sponge",
+                        //         "img": "https://cdn.vectorstock.com/i/thumb-large/74/72/6917472.jpg",
+                        //         "parent": "Parazoa"
+                        //     }
+                        // ]
                     },
                     {
                         "name": "Eumetazoa",
@@ -33,10 +35,12 @@
                                 "_children": [
                                     {
                                         "name": "Ctenophora",
+                                        "img": "http://www.beachhunter.net/images/thingstoknow/comb_jelly521262.jpg",
                                         "parent": "Radiata",
                                     },
                                     {
                                         "name": "Cnidaria",
+                                        "img": "http://colorine.net/wp-content/uploads/jellyfish-coloring-purple-striped_46387-300x249.jpg",
                                         "parent": "Radiata"
                                     }
                                 ]
@@ -47,13 +51,14 @@
                                 "_children": [
                                     {
                                         "name": "Acoelomates",
+                                        "img": "http://www.erectus.it/me-t/pikaia.jpg",
                                         "parent": "Bilateria",
-                                        "_children": [
-                                            {
-                                                "name": "flatworms",
-                                                "parent": "Acoelomates"
-                                            }
-                                        ]
+                                        // "_children": [
+                                        //     {
+                                        //         "name": "flatworms",
+                                        //         "parent": "Acoelomates"
+                                        //     }
+                                        // ]
                                     },
                                     {
                                         "name": "Body Cavities",
@@ -69,26 +74,31 @@
                                                         "_children": [
                                                             {
                                                                 "name": "Bryoza",
+                                                                "img": "http://www.asoldasthehills.org/Images/Joe's%20Drawings/BATOS~GZ.JPG",
                                                                 "parent": "Protosomes"
                                                             },
                                                             {
                                                                 "name": "Phoronida",
+                                                                "img": "http://www.fjsq.gov.cn/img/HYXZ/4178.jpg",
                                                                 "parent": "Protosomes"
                                                             },
                                                             {
                                                                 "name": "Brachiopoda",
-                                                                "parent": "Protosomes"
+                                                                "img": "http://www.senckenberg.de/images/content/forschung/abteilung/palaeontologie/palzool3/palz3-1.png",                                                                "parent": "Protosomes"
                                                             },
                                                             {
                                                                 "name": "Mollusca",
+                                                                "img": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Neohelix_albolabris_drawing_live.jpg",
                                                                 "parent": "Protosomes"
                                                             },
                                                             {
                                                                 "name": "Annelida",
+                                                                "img": "http://www.clipartkid.com/images/367/article-by-leslieday-drawing-by-jonah-nishiura-FbWvKk-clipart.jpg",
                                                                 "parent": "Protosomes"
                                                             },
                                                             {
                                                                 "name": "Arthropoda",
+                                                                "img": "http://www.imagebon.com/postpic/2014/11/butterfly-pencil-drawing_64672.jpg",
                                                                 "parent": "Protosomes"
                                                             }
                                                         ]
@@ -99,10 +109,12 @@
                                                         "_children": [
                                                             {
                                                                 "name": "Echinodermata",
+                                                                "img": "http://cliparts.co/cliparts/BTa/zj4/BTazj4yT8.gif",
                                                                 "parent": "Deuterosomes"
                                                             },
                                                             {
                                                                 "name": "Chordata",
+                                                                "img": "http://cliparts.co/cliparts/5cR/rEa/5cRrEazni.png",
                                                                 "parent": "Deuterosomes"
                                                             }
                                                         ]
@@ -115,14 +127,17 @@
                                                 "_children": [
                                                     {
                                                         "name": "Nemertea",
+                                                        "img": "http://etc.usf.edu/clipart/72700/72784/72784_acorn_worm_lg.gif",
                                                         "parent": "Pseudocoelomates"
                                                     },
                                                     {
                                                         "name": "Rotifera",
+                                                        "img": "http://creationwiki.org/pool/images/2/21/Rotifer_3.gif",
                                                         "parent": "Pseudocoelomates"
                                                     },
                                                     {
                                                         "name": "Nematoda",
+                                                        "img": "https://upload.wikimedia.org/wikipedia/commons/d/db/Trichosomoides_crassicauda_drawing_in_Hall_1916.jpg",
                                                         "parent": "Pseudocoelomates"
                                                     }
                                                 ]
@@ -169,7 +184,7 @@
                     links = tree.links(nodes);
 
                 // Normalize for fixed-depth.
-                nodes.forEach(function (d) { d.y = d.depth * 110; });
+                nodes.forEach(function (d) { d.y = d.depth * 150; });
 
                 // Update the nodes…
                 var node = svg.selectAll("g.node")
@@ -280,3 +295,4 @@
     }
 
 } ());
+

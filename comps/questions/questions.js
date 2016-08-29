@@ -80,7 +80,7 @@ function vertebrate(){
    }
    function mammals,reptiles/birds(){
        if(milk){
-           *mammals
+           mammals
        }
        else(noMilK){
            reptiles/birds
@@ -152,6 +152,15 @@ function neognatha(){
 }
 //small clutches = 1-2 eggs at a time
 //large clutches = 5-10 eggs at a time
+function neoaves(){
+    if(){
+
+    }
+    else(){
+        
+    }
+}
+
 function galloanserae(){
     if(landfowl){
         galliformes
@@ -196,3 +205,233 @@ function anseriformes(){
 
 These processes can serve to attach scapula muscles,[1] and help to strengthen the rib cage overlapping with the rib behind them.[1][2] They are also shown to have a role in respiration by increasing the effectiveness of muscles involved in inspiration including the appendicocostal muscles.[3] The processes are short in walking birds and long in diving species and are of intermediate length in non-specialist birds.[4] The screamers (Anhimidae) are unique in lacking this process.[5] The process has also been noted in some Enantiornithines.[6] Although bony uncinate processes are unique to birds, cartilaginous uncinate processes are present in crocodiles. The uncinate process has also been reported in Sphenodon, Caudipteryx, oviraptorids, Confuciusornis and Chaoyangia however it does not occur in Archaeopteryx.[6]
 */
+
+function mammals(){
+    if(layEggs){
+        monotremes
+    }
+    else(noEggs){
+        placental
+    }
+}
+function placental(){
+    if(bornMature){
+        eutheria(placental)
+    }
+    else(bornImmature){
+        marsupial
+    }
+}
+function marsupial(){
+    if(newWorld){
+        didelphimorphia
+    }
+    else(australasia){
+        australidelphia/paucituberculata
+    }
+}
+function australidelphia/paucituberculata(){
+    if(southAmerica){
+        paucituberculata
+    }
+    else(austalia){
+        australidelphia
+    }
+}
+function australidelphia(){
+    if(large){
+        diprotodontia
+    }
+    else(small){
+        dasyuromorphia,notoryctidae,peramelemorphia
+    }
+}
+
+function eutheria(){
+    if(southAmerica/africa){
+        atlantogenata
+    }
+    else(elsewhere){
+        boreoeutheria
+    }
+}
+function atlantogenata(){
+    if(africa){
+        afrotheria
+    }
+    else(southAmerica){
+        xenarthra
+    }
+}
+function boreoeutheria(){
+    if(europe){
+        euarchontoglires
+    }
+    else(laurasia){
+        laurasiatheria
+    }
+}
+function euarchontoglires(){
+    if(jackedUpFeet){
+        glires
+    }
+    else(not){
+        euarchonta
+    }
+}
+function euarchonta(){
+    if(glidingSkinFlaps){
+        dermoptera
+    }
+    else(not){
+        primates
+    }
+}
+function laurasiatheria(){
+    if(scrotum){
+        scrotifera
+    }
+    else(not){
+        insectivora/eulipotyphla
+    }
+}
+function scrotifera(){
+    if(wings){
+        chiroptera
+    }
+    else(noWings){
+         fereuungulata
+    }
+}
+function  fereuungulata(){
+    if(hoofed){
+        ungulate
+    }
+    else(noHoofs){
+        ferae
+    }
+}
+function ungulate(){
+    if(evenToed){
+        artiodactyla
+    }
+    else(oddToed){
+        perissodactyla
+    }
+}
+function artiodactyla(){
+    if(marine){
+        cetacea
+    }
+    else(terrestrial){
+        artiodactyla2
+    }
+}
+function ferae(){
+    if(scales){
+        pholidota
+    }
+    else(noScales){
+        carnivora
+    }
+}
+function carnivora(){
+    if(singleChamberedAuditoryBullae){
+        caniformia
+    }
+    else(doubleChamberedAuditoryBullae){
+        feliformia
+    }
+}
+function feliformia(){
+    if(highlySpecializedScentGlands){
+        	nandiniidae
+    }
+    else(not){
+       (felidae,
+(viverridae,
+(hyaenidae,
+(herpestidae,
+eupleridae))))  
+    }
+}
+function (felidae,
+(viverridae,
+(hyaenidae,
+(herpestidae,
+eupleridae))) (){
+    if(fourToedHindFoot){
+        feldiae
+    }
+    else(fiveToedHindFoot){
+        (viverridae,
+(hyaenidae,
+(herpestidae,
+eupleridae)))
+    }
+}
+function (viverridae,(hyaenidae,
+(herpestidae,
+eupleridae))) (){
+    if(relativelyUndevelopedCarnassialTeeth){
+        viverridae
+    }
+    else(developedCarnassialTeeth){
+        (hyaenidae,
+(herpestidae,
+eupleridae))
+    }
+}
+function (hyaenidae,
+((hyaenidae,
+(herpestidae,
+eupleridae)))) (){
+    if(dogLike){
+        hyaenidae
+    }
+    else(catLike){
+        herpestidae,
+        eupleridae
+    }
+}
+function herpestidae,eupleridae(){
+    if(eurasian/african){
+        herpestidae
+    }
+    else(madagascar){
+        eupleridae
+    }
+}
+
+function caniformia(){
+    if(lose3rdUpperMolar){
+      canidae  
+    }
+    else(keep){
+       arctoidea 
+    }
+}
+function canidae(){
+    if(partiallyRetractileClaws){
+        foxes
+    }
+    else(fixedClaws){
+        dogs
+    }
+}
+function arctoidea(){
+    if(omnivorous){
+        bears
+    }
+    else(carnivorous){
+        pinnipedia/musteloidea
+    }
+}
+function pinnipedia/pinnipedia(){
+    if(semiaquatic){
+        pinnipedia
+    }
+    else(terrestrial){
+        pinnipedia
+    }
+}

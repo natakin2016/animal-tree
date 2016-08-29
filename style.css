@@ -10,22 +10,36 @@ node {
 
     .node text {
       font: 24px sans-serif;
+<<<<<<< HEAD
+ 
+=======
    /*text-shadow: 2px 2px 4px #000000 ;*/
+>>>>>>> 735ee8a203736e6cc9c8ee9e7b6c87e0b7c68010
     }
+
+     .node text:hover{
+         font-weight: bold;
+     }
 
     .link {
       fill: none;
       stroke: #ccc;
       stroke-width: 7px;
     }
+<<<<<<< HEAD
+   /*.col-xs-12{
+       background-color: chartreuse;
+   }*/
+=======
    .col-xs-12{
        /*background-color: chartreuse;*/
    }
+>>>>>>> 735ee8a203736e6cc9c8ee9e7b6c87e0b7c68010
 
    /*Navbar*/
-    body {
-      font-family: "Lato", sans-serif;
-      }
+   body {
+    font-family: "Lato", sans-serif;
+    }
 
     .sidenav {
         height: 100%;
@@ -72,7 +86,7 @@ node {
 
     .node circle {
       fill: black;
-      stroke: chartreuse;
+      /*stroke: chartreuse;*/
       stroke-width: 5px;
     }
 
@@ -83,11 +97,11 @@ node {
 
     .link {
       fill: none;
-      stroke: deeppink;
+      stroke: lightgray;
       stroke-width: 3px;
     }
    .col1{
-       background:  chartreuse;
+       /*background:  chartreuse;*/
        width: 100%;
    }
    .top-header{
@@ -97,3 +111,34 @@ node {
    div.row{
      width: 100%;
    }
+   .buttdiv{
+       padding: 1em;
+      
+   }
+   .divide{
+       height: 4em;
+       margin-top: 2em;
+       margin-bottom: 2em;
+       background: black;
+      
+      
+   }
+   .treepage{
+       background-color:white;
+      
+   }
+   
+   /*background around expanding tree*/
+   #putithere{
+       background-color: white;
+   }
+   .btn-block{
+       background: linear-gradient(to bottom,  #267c99 50%,#007299 50%);
+   }
+   svg{
+      
+   }
+   .expand{
+padding: 1em;
+   }
+  

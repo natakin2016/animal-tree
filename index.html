@@ -11,20 +11,22 @@
 
 </head>
 
-<body class="body-background">
+<body>
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a ui-sref="home" onclick="closeNav()">Home</a>
-        <a ui-sref="aboutpage" onclick="closeNav()">About</a>
-        <a ui-sref="treepage" onclick="closeNav()">Tree</a>
-        <a ui-sref="gameoflifepage" onclick="closeNav()">Game of Life</a>
-        <a ui-sref="moreinfopage" onclick="closeNav()">More Information</a>
-        <a ui-sref="vocabularypage" onclick="closeNav()">Vocabulary</a>
+        <a ui-sref="about" onclick="closeNav()">About</a>
+        <a ui-sref="tree" onclick="closeNav()">Tree</a>
+        <a ui-sref="gol" onclick="closeNav()">Game of Life</a>
+        <a ui-sref="moreinfo" onclick="closeNav()">More Information</a>
+        <a ui-sref="vocabulary" onclick="closeNav()">Vocabulary</a>
     </div>
 
-    <h1 class="title">ANIMALS TREE</h1>
-    <ui-view></ui-view>
+    <div class="body-background">
+        <h1 class="title">ANIMALS TREE</h1>
+     <ui-view></ui-view>
+    </div>
 
     <!--Scripts Go Below-->
     <!--CDNs-->

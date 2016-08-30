@@ -6,7 +6,7 @@
       controller: gameoflifepageController
     })
 
-    function gameoflifepageController(listService){
+    function gameoflifepageController(){
      
     }
 

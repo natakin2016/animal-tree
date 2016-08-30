@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello World</h1>
-    <script>
-        var ConwaysGameOfLife = function(options) {
+<h1>HOOKED UP</h1>
+<script>        var ConwaysGameOfLife = function(options) {
 
         var newConwayGame = {};
 
@@ -165,48 +157,4 @@
 
         return newConwayGame;
         }
-
-        // Instantiation
-        var game = ConwaysGameOfLife({
-        squareSize: 25,
-        width: $(window).width(),
-        height: $(window).height()
-        });
-        game.start();
-
-        // Controllers
-        d3.select(".pause")
-            .on("click", function() {
-            game.togglePause();
-            });
-
-        d3.select(".reset")
-            .on("click", function() {
-            game.restart();     
-            });
-
-        d3.select(".randomize")
-            .on("click", function() {
-            game.randomlyPopulate();
-            })
-
-        // utitliy functions
-        function flatten(array) {
-
-        var result = [];
-        for (var i = 0; i < array.length; i++) {
-            if (Array.isArray(array[i])) {
-            result = result.concat(flatten(array[i]));
-            } else {
-            result.push(array[i]);
-            }
-        }
-
-        return result;
-
-        };
-        game.randomlyPopulate()
-        
-    </script>
-</body>
-</html>
+        </script>

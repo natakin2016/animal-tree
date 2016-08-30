@@ -1,7 +1,10 @@
+var yes=true
+var no=false
 function vertebrate(){
 //Do you want to have jaws or no jaws?
-    if (noJaws){
-       cyclostomata 
+    if (true){
+        console.log("You have Jaws")
+       cyclostomata ()
     }
     else(jaws){
         gnathostomata
@@ -9,8 +12,9 @@ function vertebrate(){
 }
    function cyclostomata(){
 //Do you want to be a scavenger or a parasite?
-       if (scavenger){
-           hagfish
+       if (true){
+           console.log("You are a Hag fish")
+        // hagfish
        }
        else(parasite){
            lamprey
@@ -248,6 +252,7 @@ function placental(){
         marsupial
     }
 }
+// DAN START HERE
 function marsupial(){
 //Do you want to be from the Americas or Australia/Asia?
     if(newWorld){

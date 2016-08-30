@@ -7,19 +7,19 @@
 					url: '',
 					template: '<home-component></home-component>'
 				})
-				.state('gameoflifepage', {
+				.state('gol', {
 					url: '/gameoflifepage',
 					template: '<gameoflifepage-component></gameoflifepage-component>'
 				})
-				.state('aboutpage', {
+				.state('about', {
 					url: '/aboutpage',
 					template: '<aboutpage-component></aboutpage-component>'
 				})
-				.state('moreinfopage', {
+				.state('moreinfo', {
 					url: '/moreinfopage',
 					template: '<moreinfopage-component></moreinfopage-component>'
 				})
-				.state('treepage', {
+				.state('tree', {
 					url: '/treepage',
 					template: '<treepage-component></treepage-component>'
 				})

@@ -1,7 +1,7 @@
 (function () {
 	angular.module('kingdoms')
 		.config(function ($stateProvider, $urlRouterProvider) {
-			
+
 			$stateProvider
 				.state('home', {
 					url: '/home',
@@ -22,6 +22,10 @@
 				.state('tree', {
 					url: '/treepage',
 					template: '<treepage-component></treepage-component>'
+				})
+				.state('vocab', {
+					url: '/vocabularypage',
+					template: '<vocabularypage-component></vocabularypage-component>'
 				})
 
 

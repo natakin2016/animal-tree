@@ -1,3 +1,5 @@
+
+
 node {
         cursor: pointer;
     }
@@ -38,7 +40,10 @@ node {
 
    /*Navbar*/
    body {
-    font-family: "Lato", sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Varela Round', sans-serif;
     }
 
     .sidenav {
@@ -142,4 +147,25 @@ node {
 padding: 1em;
    }
   
+<<<<<<< HEAD
+  .infobody{
+      background-image: url(https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 1000px;
+  }
+  .body-background{
+      background-image: url(https://static.pexels.com/photos/33284/butterfly-matting-macro-macro-photography.jpg);
+      background-size: cover;
+      height: 1000px;
+  }
+  .title{
+      font-size: 6em;
+      padding-left: 80px;
+      padding-top: 150px;
+      color: white;
+      font-family: 'Pacifico', cursive;
+  }
+=======
   
+>>>>>>> c17bf9a3630008dab733d100f3422b35098075fe

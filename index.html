@@ -5,11 +5,13 @@
     <meta charset="utf-8" />
     <title>Kingdom Tutor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
 </head>
 
-<body>
+<body class="body-background">
     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -21,6 +23,7 @@
         <a ui-sref="vocabularypage" onclick="closeNav()">Vocabulary</a>
     </div>
 
+    <h1 class="title">ANIMALS TREE</h1>
     <ui-view></ui-view>
 
     <!--Scripts Go Below-->

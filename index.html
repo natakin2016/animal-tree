@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776; Menu</span>
     <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <a ui-sref="home" onclick="closeNav()">Home</a>
@@ -23,10 +23,7 @@
         <a ui-sref="vocabulary" onclick="closeNav()">Vocabulary</a>
     </div>
 
-    <div class="body-background">
-        <h1 class="title">ANIMALS TREE</h1>
-     <ui-view></ui-view>
-    </div>
+    <ui-view></ui-view>
 
     <!--Scripts Go Below-->
     <!--CDNs-->
@@ -44,6 +41,8 @@
     <script src="comps/tree/tree.js"></script>
     <script src="comps/treepage/tree.js"></script>
     <script src="comps/vocabularypage/vocab.js"></script>
+    <script src="comps/home/home.js"></script>
+
 
     <!--UTILS-->
     <script src="comps/navbar/nav.js"></script>

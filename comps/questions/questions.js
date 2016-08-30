@@ -1,4 +1,5 @@
 function vertebrate(){
+//Do you want to have jaws or no jaws?
     if (noJaws){
        cyclostomata 
     }
@@ -7,6 +8,7 @@ function vertebrate(){
     }
 }
    function cyclostomata(){
+//Do you want to be a scavenger or a parasite?
        if (scavenger){
            hagfish
        }
@@ -15,6 +17,7 @@ function vertebrate(){
        }
    }
    function gnathostomata(){
+//Do you want to have a cartilage skeleton or a bony skeleton?
        if(mineralizedSkeleton){
            chondrichthyes
        }
@@ -23,6 +26,7 @@ function vertebrate(){
        }
    }
    function chondrichthyes(){
+//Do you want to have a stomach or no stomach?
        if(stomach){
           elasmobranchii 
        }
@@ -31,6 +35,7 @@ function vertebrate(){
        }
    }
    function elasmobranchii(){
+//Do you want to have a round body or a flat body?
        if(roundBody){
            selachii
        }
@@ -39,6 +44,7 @@ function vertebrate(){
        }
    }
    function osteichthyes(){
+//Do you want to have fins on bones or lobes?
        if(rayFins){
            actinopterygii
        }
@@ -47,6 +53,7 @@ function vertebrate(){
        }
    }
    function sarcopterygii(){
+//Do you want to have limbs with digits or without digits?
        if(limbsWithDigits){
            tetrapodomorpha
        }
@@ -55,6 +62,7 @@ function vertebrate(){
        }
    }
    function tetrapodomorpha(){
+//Do you want to lay eggs on land or in water?
        if(amnioticEgg){
            mammals,reptiles/birds
        }
@@ -63,6 +71,7 @@ function vertebrate(){
        }
    }
    function amphibia(){
+//Do you want to lose your limbs or keep them?
        if(loseLimbs){
            caecillians
        }
@@ -71,6 +80,7 @@ function vertebrate(){
        }
    }
    function salientiaCaudata(){
+//Do you want to have a long body or a short body?
        if(shortBody){
            salientia
        }
@@ -79,6 +89,7 @@ function vertebrate(){
        }
    }
    function mammals,reptiles/birds(){
+//Do you want to produce milk for your young or no?
        if(milk){
            mammals
        }
@@ -87,6 +98,7 @@ function vertebrate(){
        }
    }
 function reptilesBirds(){
+//Do you want to have a short body or a long body?
     if(longBody){
         squamata
     }
@@ -95,6 +107,7 @@ function reptilesBirds(){
     }
 }
 function squamata(){
+//Do you want to lose your limbs or keep them?
     if(keepLimbs){
         lizards
     }
@@ -103,6 +116,7 @@ function squamata(){
     }
 }
 function archosauromorpha(){
+//Do you want to have a shell or no?
     if(shell){
         testunides
     }
@@ -111,6 +125,7 @@ function archosauromorpha(){
     }
 }
 function archosauriformes(){
+//Do you want to have bony armor or no?
     if(bonyArmor){
         crocodilia
     }
@@ -119,6 +134,7 @@ function archosauriformes(){
     }
 }
 function aves(){
+//Do you want to have a bird-like tail or a lizard-like tail?
     if(lizardTail){
         sauriurae
     }
@@ -127,6 +143,7 @@ function aves(){
     }
 }
 function ornithurae(){
+//Do you want to be aquatic or non-aquatic?
     if(aquatic){
         hesperornithes
     }
@@ -135,6 +152,7 @@ function ornithurae(){
     }
 }
 function neornithes(){
+//Do you want to be able to fly or no?
     if(flightless){
         palaeognatha
     }
@@ -143,6 +161,7 @@ function neornithes(){
     }
 }
 function neognatha(){
+//Do you want to lay 1-2 eggs at a time or 5-10?
     if(smallClutches){
         *neoaves
     }
@@ -162,6 +181,7 @@ function neoaves(){
 }
 
 function galloanserae(){
+//Do you want to live only on land or on land and in water?
     if(landfowl){
         galliformes
     }
@@ -170,6 +190,7 @@ function galloanserae(){
     }
 }
 function galliformes(){
+//Do you want your young to hatch mature or immature?
     if(immatureHatching){
         cracidae
     }
@@ -178,6 +199,7 @@ function galliformes(){
     }
 }
 function cracidae(){
+//Do you want to have a bald neck or a feathered neck?
     if(baldNeck){
         numididae
     }
@@ -186,6 +208,7 @@ function cracidae(){
     }
 }
 function gallimorphae(){
+//Do you want to be from the Old World or the New World?
     if(oldWorld){
         phasianidae
     }
@@ -194,6 +217,7 @@ function gallimorphae(){
     }
 }
 function anseriformes(){
+//Do you want to have hooks/barbs on your ribs or no?
     if(uncinateRibs){
         anatidae
     }
@@ -203,10 +227,11 @@ function anseriformes(){
 }
 /*uncinate ribs =extensions of bone that project caudally from the vertical segment of each rib. (Uncinate means hooked from Latin uncinatus, from uncinus, barb, from uncus, hook.) They are found in birds (except for screamers), reptiles, and the early amphibian Ichthyostega.[1]
 
-These processes can serve to attach scapula muscles,[1] and help to strengthen the rib cage overlapping with the rib behind them.[1][2] They are also shown to have a role in respiration by increasing the effectiveness of muscles involved in inspiration including the appendicocostal muscles.[3] The processes are short in walking birds and long in diving species and are of intermediate length in non-specialist birds.[4] The screamers (Anhimidae) are unique in lacking this process.[5] The process has also been noted in some Enantiornithines.[6] Although bony uncinate processes are unique to birds, cartilaginous uncinate processes are present in crocodiles. The uncinate process has also been reported in Sphenodon, Caudipteryx, oviraptorids, Confuciusornis and Chaoyangia however it does not occur in Archaeopteryx.[6]
+These processes can serve to attach scapula muscles,[1] and help to strengthen the rib cage overlapping with the rib behind them.[1][2] They are also shown to have a role in respiration by increasing the effectiveness of muscles involved in inspiration including the appendicocostal muscles.[3] The processes are short in walking birds and long in diving species and are of intermediate length in non-specialist birds.
 */
 
 function mammals(){
+//Do you want to lay eggs or no?
     if(layEggs){
         monotremes
     }
@@ -215,6 +240,7 @@ function mammals(){
     }
 }
 function placental(){
+//Do you want your young to be born mature or immature?
     if(bornMature){
         eutheria(placental)
     }
@@ -223,6 +249,7 @@ function placental(){
     }
 }
 function marsupial(){
+//Do you want to be from the Americas or Australia/Asia?
     if(newWorld){
         didelphimorphia
     }
@@ -231,6 +258,7 @@ function marsupial(){
     }
 }
 function australidelphia/paucituberculata(){
+//Do you want to be from South America or Australia?
     if(southAmerica){
         paucituberculata
     }
@@ -239,6 +267,7 @@ function australidelphia/paucituberculata(){
     }
 }
 function australidelphia(){
+//Do you want to be large or small?
     if(large){
         diprotodontia
     }
@@ -248,6 +277,7 @@ function australidelphia(){
 }
 
 function eutheria(){
+//Do you want to be from South America/Africa or somewere else?
     if(southAmerica/africa){
         atlantogenata
     }
@@ -256,6 +286,7 @@ function eutheria(){
     }
 }
 function atlantogenata(){
+//Do you want to be from Africa or South America?
     if(africa){
         afrotheria
     }
@@ -264,6 +295,7 @@ function atlantogenata(){
     }
 }
 function boreoeutheria(){
+//Do you want to be from Europe or Laurasia?
     if(europe){
         euarchontoglires
     }
@@ -272,6 +304,7 @@ function boreoeutheria(){
     }
 }
 function euarchontoglires(){
+//Do you want to have big feet or no?
     if(jackedUpFeet){
         glires
     }
@@ -280,6 +313,7 @@ function euarchontoglires(){
     }
 }
 function euarchonta(){
+//Do you want to have flaps of skin for flying between your fore- and hind-limbs?
     if(glidingSkinFlaps){
         dermoptera
     }
@@ -288,6 +322,7 @@ function euarchonta(){
     }
 }
 function laurasiatheria(){
+//Do you want males of your species to have external or internal testes?
     if(scrotum){
         scrotifera
     }
@@ -296,6 +331,7 @@ function laurasiatheria(){
     }
 }
 function scrotifera(){
+//Do you want to have wings or no?
     if(wings){
         chiroptera
     }
@@ -304,6 +340,7 @@ function scrotifera(){
     }
 }
 function  fereuungulata(){
+//Do you want to have hooves or no?
     if(hoofed){
         ungulate
     }
@@ -312,6 +349,7 @@ function  fereuungulata(){
     }
 }
 function ungulate(){
+//Do you want to have an even number of toes or an odd number?
     if(evenToed){
         artiodactyla
     }
@@ -320,6 +358,7 @@ function ungulate(){
     }
 }
 function artiodactyla(){
+//Do you want to live in water or on land?
     if(marine){
         cetacea
     }
@@ -328,6 +367,7 @@ function artiodactyla(){
     }
 }
 function ferae(){
+//Do you want to have scales or no?
     if(scales){
         pholidota
     }
@@ -336,6 +376,7 @@ function ferae(){
     }
 }
 function carnivora(){
+//Do you want your middle & inner ear to be in a one-chambered bony structure or two-chambered?
     if(singleChamberedAuditoryBullae){
         caniformia
     }
@@ -344,6 +385,7 @@ function carnivora(){
     }
 }
 function feliformia(){
+//Do you want to have highly specialized scent glands or no?
     if(highlySpecializedScentGlands){
         	nandiniidae
     }
@@ -360,6 +402,7 @@ function (felidae,
 (hyaenidae,
 (herpestidae,
 eupleridae))) (){
+//Do you want to have four toes on your hind feet or five?
     if(fourToedHindFoot){
         feldiae
     }
@@ -373,6 +416,7 @@ eupleridae)))
 function (viverridae,(hyaenidae,
 (herpestidae,
 eupleridae))) (){
+//Do you want highly developed crushing teeth or underdeveloped? 
     if(relativelyUndevelopedCarnassialTeeth){
         viverridae
     }
@@ -386,6 +430,7 @@ function (hyaenidae,
 ((hyaenidae,
 (herpestidae,
 eupleridae)))) (){
+//Do you want to be dog-like or cat-like?
     if(dogLike){
         hyaenidae
     }
@@ -395,6 +440,7 @@ eupleridae)))) (){
     }
 }
 function herpestidae,eupleridae(){
+//Do you wan to be from Eurasia/Africa or Madagascar?
     if(eurasian/african){
         herpestidae
     }
@@ -404,6 +450,7 @@ function herpestidae,eupleridae(){
 }
 
 function caniformia(){
+//Do you want to lose or keep your 3rd upper molar?
     if(lose3rdUpperMolar){
       canidae  
     }
@@ -412,6 +459,7 @@ function caniformia(){
     }
 }
 function canidae(){
+//Do you want to be able to partially retract your claws or want them to be fixed in place?
     if(partiallyRetractileClaws){
         foxes
     }
@@ -420,6 +468,7 @@ function canidae(){
     }
 }
 function arctoidea(){
+//Do you want to be a carnivore or an omnivore?
     if(omnivorous){
         bears
     }
@@ -428,6 +477,7 @@ function arctoidea(){
     }
 }
 function pinnipedia/pinnipedia(){
+//Do you want to be semiaquatic or terrestrial?
     if(semiaquatic){
         pinnipedia
     }

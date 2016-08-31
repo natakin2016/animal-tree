@@ -54,7 +54,7 @@ node {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: #111;
+        background-color: rgba(0, 0, 0, .9);
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
@@ -68,13 +68,14 @@ node {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
         font-size: 25px;
-        color: #818181;
+        color: white;
         display: block;
-        transition: 0.3s
+        transition: 0.3s;
     }
 
     .sidenav a:hover, .offcanvas a:focus{
         color: #f1f1f1;
+        padding-left: 50px;
     }
 
     .sidenav .closebtn {
@@ -180,7 +181,8 @@ padding: 1em;
       padding-right: 50px;
   }
   .tree-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/96654/pexels-photo-96654.jpeg);
+      background-position: center;
       background-size: cover;
       color: white;
   }
@@ -189,6 +191,7 @@ padding: 1em;
   }
   .vocab-jumbotron{
       background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-position: center;
       background-size: cover;
       color: white;
   }
@@ -196,7 +199,8 @@ padding: 1em;
       padding-right: 50px;
   }
   .moreinfo-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/67751/pexels-photo-67751.jpeg);
+      background-position: center;
       background-size: cover;
       color: white;
   }
@@ -204,15 +208,16 @@ padding: 1em;
       padding-right: 50px;
   }
   .game-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/130621/pexels-photo-130621.jpeg);
       background-size: cover;
+      background-position: center;
       color: white;
   }
   .game-jumbotron h1{
       padding-right: 50px;
   }
   .vocab-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/25426/pexels-photo-25426.jpg);
       background-size: cover;
       color: white;
   }

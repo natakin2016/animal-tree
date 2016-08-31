@@ -27,7 +27,10 @@
 					url: '/vocabularypage',
 					template: '<vocabularypage-component></vocabularypage-component>'
 				})
-
+				.state('term', {
+					url: '/termpage',
+					template: '<termpage-component></termpage-component>'
+				})
 
 		})
 } ());

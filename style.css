@@ -229,4 +229,11 @@ padding: 1em;
   .vocab-jumbotron h1{
       padding-right: 50px;
   }
-  
+   .term-jumbotron{
+      background-image: url(https://static.pexels.com/photos/34106/zebra-wild-animal-africa-stripes.jpg);
+      background-size: cover;
+      color: white;
+  }
+  .term-jumbotron h1{
+      padding-right: 50px;
+  }

@@ -160,12 +160,14 @@ padding: 1em;
 
   .infobody{
       background-image: url(https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg);
+      background-attachment: fixed;
       background-size: cover;
       background-position: center;
       height: 1000px;
   }
   .body-background{
       background-image: url(https://static.pexels.com/photos/33284/butterfly-matting-macro-macro-photography.jpg);
+      background-attachment: fixed;
       background-size: cover;
       height: 1000px;
   }
@@ -178,6 +180,7 @@ padding: 1em;
   }
   .about-jumbotron{
       background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-attachment: fixed;
       background-size: cover;
       color: white;
   }
@@ -186,6 +189,7 @@ padding: 1em;
   }
   .tree-jumbotron{
       background-image: url(https://static.pexels.com/photos/96654/pexels-photo-96654.jpeg);
+      background-attachment: fixed;
       background-position: center;
       background-size: cover;
       color: white;
@@ -196,6 +200,7 @@ padding: 1em;
   .vocab-jumbotron{
       background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
       background-attachment: fixed;
+      background-attachment: fixed;
       background-position: center;
       background-size: cover;
       color: white;
@@ -205,6 +210,7 @@ padding: 1em;
   }
   .moreinfo-jumbotron{
       background-image: url(https://static.pexels.com/photos/67751/pexels-photo-67751.jpeg);
+      background-attachment: fixed;
       background-position: center;
       background-size: cover;
       color: white;
@@ -214,6 +220,7 @@ padding: 1em;
   }
   .game-jumbotron{
       background-image: url(https://static.pexels.com/photos/130621/pexels-photo-130621.jpeg);
+      background-attachment: fixed;
       background-size: cover;
       background-position: center;
       color: white;
@@ -223,6 +230,7 @@ padding: 1em;
   }
   .vocab-jumbotron{
       background-image: url(https://static.pexels.com/photos/25426/pexels-photo-25426.jpg);
+      background-attachment: fixed;
       background-size: cover;
       color: white;
   }
@@ -231,6 +239,7 @@ padding: 1em;
   }
    .term-jumbotron{
       background-image: url(https://static.pexels.com/photos/34106/zebra-wild-animal-africa-stripes.jpg);
+      background-attachment: fixed;
       background-size: cover;
       color: white;
   }

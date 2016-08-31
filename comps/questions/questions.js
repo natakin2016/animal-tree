@@ -1,3 +1,53 @@
+var qc = this;
+function askQuestion(name){
+    qc.question = getQuestion(name)
+
+}
+
+function getQuestion(name){
+    if(questions[name]){
+        return questions[name];
+    }
+    //Trigger End
+    qc.result = name;
+}
+
+
+function answer(choice){
+    askQuestion(qc.question[choice]);
+}
+
+
+
+var questions = [{
+    vertebrate: {
+        body: 'Do you have a spine?',
+        yes: 'cyclostomata',
+        no: 'gnathostomata'
+    },
+    cyclostomata: {
+        body: 'Hey there bub?',
+        yes: 'You are a Hag Fish'
+    }
+}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var yes=true
 var no=false
 function vertebrate(){
@@ -167,7 +217,7 @@ function neornithes(){
 function neognatha(){
 //Do you want to lay 1-2 eggs at a time or 5-10?
     if(smallClutches){
-        *neoaves
+        neoaves
     }
     else(largeClutches){
         galloanserae

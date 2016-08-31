@@ -180,7 +180,8 @@ padding: 1em;
       padding-right: 50px;
   }
   .tree-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/96654/pexels-photo-96654.jpeg);
+      background-position: center;
       background-size: cover;
       color: white;
   }
@@ -189,6 +190,7 @@ padding: 1em;
   }
   .vocab-jumbotron{
       background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-position: center;
       background-size: cover;
       color: white;
   }
@@ -196,7 +198,8 @@ padding: 1em;
       padding-right: 50px;
   }
   .moreinfo-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/67751/pexels-photo-67751.jpeg);
+      background-position: center;
       background-size: cover;
       color: white;
   }
@@ -204,15 +207,16 @@ padding: 1em;
       padding-right: 50px;
   }
   .game-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/130621/pexels-photo-130621.jpeg);
       background-size: cover;
+      background-position: center;
       color: white;
   }
   .game-jumbotron h1{
       padding-right: 50px;
   }
   .vocab-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      background-image: url(https://static.pexels.com/photos/25426/pexels-photo-25426.jpg);
       background-size: cover;
       color: white;
   }

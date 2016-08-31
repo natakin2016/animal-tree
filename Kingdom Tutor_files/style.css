@@ -1,0 +1,168 @@
+
+
+node {
+        cursor: pointer;
+    }
+
+    .node circle {
+      fill: black;
+      stroke: chartreuse;
+      stroke-width: 1px;
+    }
+
+    .node text {
+      font: 24px sans-serif;
+<<<<<<< HEAD
+ 
+=======
+   /*text-shadow: 2px 2px 4px #000000 ;*/
+>>>>>>> 735ee8a203736e6cc9c8ee9e7b6c87e0b7c68010
+    }
+
+     .node text:hover{
+         font-weight: bold;
+     }
+
+    .link {
+      fill: none;
+      stroke: #ccc;
+      stroke-width: 7px;
+    }
+<<<<<<< HEAD
+   /*.col-xs-12{
+       background-color: chartreuse;
+   }*/
+=======
+   .col-xs-12{
+       /*background-color: chartreuse;*/
+   }
+>>>>>>> 735ee8a203736e6cc9c8ee9e7b6c87e0b7c68010
+
+   /*Navbar*/
+   body {
+    font-family: 'Varela Round', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-family: 'Varela Round', sans-serif;
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+
+    .sidenav a:hover, .offcanvas a:focus{
+        color: #f1f1f1;
+    }
+
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+    }
+
+    node {
+        cursor: pointer;
+    }
+
+    .node circle {
+      fill: black;
+      /*stroke: chartreuse;*/
+      stroke-width: 5px;
+    }
+
+    .node text {
+      font: 20px sans-serif;
+      
+    }
+
+    .link {
+      fill: none;
+      stroke: lightgray;
+      stroke-width: 3px;
+    }
+   .col1{
+       /*background:  chartreuse;*/
+       width: 100%;
+   }
+   .top-header{
+     text-align: center;
+   }
+  
+   div.row{
+     width: 100%;
+   }
+   .buttdiv{
+       padding: 1em;
+      
+   }
+   .divide{
+       height: 4em;
+       margin-top: 2em;
+       margin-bottom: 2em;
+       background: black;
+      
+      
+   }
+   .treepage{
+       background-color:white;
+      
+   }
+   
+   /*background around expanding tree*/
+   #putithere{
+       background-color: white;
+   }
+   .btn-block{
+       background: linear-gradient(to bottom,  #267c99 50%,#007299 50%);
+   }
+   svg{
+      
+   }
+   .expand{
+padding: 1em;
+   }
+  
+
+  .infobody{
+      background-image: url(https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 1000px;
+  }
+  .body-background{
+      background-image: url(https://static.pexels.com/photos/33284/butterfly-matting-macro-macro-photography.jpg);
+      background-size: cover;
+      height: 1000px;
+  }
+  .title{
+      font-size: 6em;
+      padding-left: 80px;
+      padding-top: 150px;
+      color: white;
+      font-family: 'Pacifico', cursive;
+  }

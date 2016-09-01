@@ -1,19 +1,3 @@
-<<<<<<< HEAD
-;(function(){
-
-  
-    angular.module(kingdoms) 
-        .component({
-        templateUrl:comps/questions/questions.html,
-        controller:QuestionsController,
-        controllerAs:QC
-}) 
-function QuestionsController(){
-    
-}
-
-}());
-=======
 var qc = this;
 function askQuestion(name){
     qc.question = getQuestion(name)
@@ -51,292 +35,245 @@ var questions = [{
 
 
 
-function vertebrate(){
-//Do you want to have jaws or no jaws?
-    if (noJaws){
-       cyclostomata 
-    }
-    else(jaws){
-        gnathostomata
-    }
-}
-   function cyclostomata(){
-//Do you want to be a scavenger or a parasite?
-       if (scavenger){
-           hagfish//
-       }
-       else(parasite){
-           lamprey//
-       }
-   }
-   function gnathostomata(){
-//Do you want to have a cartilage skeleton or a bony skeleton?
-       if(mineralizedSkeleton){
-           chondrichthyes
-       }
-       else{
-           osteichthyes//l.46
-       }
-   }
-   function chondrichthyes(){
-//Do you want to have a stomach or no stomach?
-       if(stomach){
-          elasmobranchii 
-       }
-       else(noStomach){
-           holocephali//
-       }
-   }
-   function elasmobranchii(){
-//Do you want to have a round body or a flat body?
-       if(roundBody){
-           selachii//
-       }
-       else(flatBody){
-           batoidea//
-       }
-   }
-   function osteichthyes(){
-//Do you want to have fins on bones or lobes?
-       if(rayFins){
-           actinopterygii//
-       }
-       else(lobeFins){
-           sarcopterygii
-       }
-   }
-   function sarcopterygii(){
-//Do you want to have limbs with digits or without digits?
-       if(limbsWithDigits){
-           tetrapodomorpha
-       }
-       else(limbsWithoutDigits){
-           dipnomorpha//
-       }
-   }
-   function tetrapodomorpha(){
-//Do you want to lay eggs on land or in water?
-       if(amnioticEgg){
-           mammals,reptiles/birds//l.91
-       }
-       else(noAmnioticEgg){
-           amphibia
-       }
-   }
-   function amphibia(){
-//Do you want to lose your limbs or keep them?
-       if(loseLimbs){
-           caecillians//
-       }
-       else(keepLimbs){
-           salientia,caudata
-       }
-   }
-   function salientiaCaudata(){
-//Do you want to have a long body or a short body?
-       if(shortBody){
-           salientia//
-       }
-       else(longBody){
-           caudata//
-       }
-   }
-   function mammals,reptiles/birds(){
-//Do you want to produce milk for your young or no?
-       if(milk){
-           mammals//l.233
-       }
-       else(noMilk){
-           reptiles/birds
-       }
-   }
-function reptilesBirds(){
-//Do you want to have a short body or a long body?
-    if(longBody){
-        squamata
-    }
-    else(shortBody){
-        archosauromorpha//l.118
-    }
-}
-function squamata(){
-//Do you want to lose your limbs or keep them?
-    if(keepLimbs){
-        lizards//
-    }
-    else(loseLimbs){
-        snakes//
-    }
-}
-function archosauromorpha(){
-//Do you want to have a shell or no?
-    if(shell){
-        testunides//
-    }
-    else(noShell){
-        archosauriformes
-    }
-}
-function archosauriformes(){
-//Do you want to have bony armor or no?
-    if(bonyArmor){
-        crocodilia//
-    }
-    else(no){
-        aves
-    }
-}
-function aves(){
-//Do you want to have a bird-like tail or a lizard-like tail?
-    if(lizardTail){
-        sauriurae//
-    }
-    else(birdTail){
-        ornithurae
-    }
-}
-function ornithurae(){
-//Do you want to be aquatic or non-aquatic?
-    if(aquatic){
-        hesperornithes//
-    }
-    else(nonAquatic){
-        neornithes
-    }
-}
-function neornithes(){
-//Do you want to be able to fly or no?
-    if(flightless){
-        palaeognatha//
-    }
-    else(flying){
-        neognatha
-    }
-}
-function neognatha(){
-//Do you want to lay 1-2 eggs at a time or 5-10?
-    if(smallClutches){
-        *neoaves
-    }
-    else(largeClutches){
-        galloanserae
-    }
-}
-//small clutches = 1-2 eggs at a time
-//large clutches = 5-10 eggs at a time
-function neoaves(){
-    if(){
+vertebrate:{
+body:'Do you want to have jaws or no jaws?'
+option1:'jaws'//gnathostomata
+option2:'noJaws'//cyclostomata 
+button1txt:'Jaws'
+button2txt:'No Jaws'
+},
 
-    }
-    else(){
-        
-    }
-}
+cyclostomata:{
+body:'Do you want to be a scavenger or a parasite?'
+option1:'scavenger'
+option2:'parasite'
+button1txt:'Scavenger'
+button2txt:'Parasite'
+},
 
-function galloanserae(){
-//Do you want to live only on land or on land and in water?
-    if(landfowl){
-        galliformes
-    }
-    else(waterfowl){
-        anseriformes//l.219
-    }
-}
-function galliformes(){
-//Do you want your young to hatch mature or immature?
-    if(immatureHatching){
-        cracidae
-    }
-    else(matureHatching){
-        megapodiidae//
-    }
-}
-function cracidae(){
-//Do you want to have a bald neck or a feathered neck?
-    if(baldNeck){
-        numididae//
-    }
-    else(featheredNeck){
-        gallimorphae
-    }
-}
-function gallimorphae(){
-//Do you want to be from the Old World or the New World?
-    if(oldWorld){
-        phasianidae//
-    }
-    else(newWorld){
-        odontophoridae//
-    }
-}
-function anseriformes(){
-//Do you want to have hooks/barbs on your ribs or no?
-    if(uncinateRibs){
-        anatidae//
-    }
-    else(noUncinateRibs){
-        anhimidae//
-    }
-}
-/*uncinate ribs =extensions of bone that project caudally from the vertical segment of each rib. (Uncinate means hooked from Latin uncinatus, from uncinus, barb, from uncus, hook.) They are found in birds (except for screamers), reptiles, and the early amphibian Ichthyostega.[1]
+gnathostomata:{
+body:'Do you want to have a cartilage skeleton or a bony skeleton?'
+option1:'cartilage'//chondrichthyes
+option2:'bony'//osteichthyes
+button1txt:'Cartilage Skeleton'
+button2txt:'Bony Skeleton'
+},
 
-These processes can serve to attach scapula muscles,[1] and help to strengthen the rib cage overlapping with the rib behind them.[1][2] They are also shown to have a role in respiration by increasing the effectiveness of muscles involved in inspiration including the appendicocostal muscles.[3] The processes are short in walking birds and long in diving species and are of intermediate length in non-specialist birds.
-*/
+chondrichthyes:{
+body:'Do you want to have a stomach or no stomach?'
+option1:'stomach'//elasmobranchii 
+option2:'noStomach'//holocephali
+button1txt:'Stomach'
+button2txt:'No Stomach'
+},
 
-function mammals(){
-//Do you want to lay eggs or no?
-    if(true){
-        console.log("You lay eggs")
-        monotremes()//
-    }
-    else(false){
-        placental()
-    }
-}
-function placental(){
-//Do you want your young to be born mature or immature?
-    if(true){
-        console.log("Your young are born mature")
-        eutheria()//l.288
-    }
-    else(false){
-        console.log("Youryoun are born immature")
-        marsupial()
-    }
-}
-function marsupial(){
-//Do you want to be from the Americas or Australia/Asia?
-    if(true){
-        console.log("You are from the Americas")
-        didelphimorphia()//
-    }
-    else(false){
-        console.log("You are from Australia/Asia")
-        austPauc()
-    }
-}
-function austPauc(){
-//Do you want to be from South America or Australia?
-    if(true){
-        console.log("You are from South America")
-        paucituberculata()//
-    }
-    else(false){
-        console.log("You are from Australia")
-        australidelphia()
-    }
-}
-function australidelphia(){
-//Do you want to be large or small?
-    if(true){
-        console.log("You are large")
-        diprotodontia()//
-    }
-    else(false){
-        console.log("You are small")
-        dasyNotoPeram()//
-    }
-}
+elasmobranchii:{
+body:'Do you want to have a round body or a flat body?'
+option1:'round'//selachii
+option2:'flat'//batoidea
+button1txt:'Round Body'
+button2txt:'Flat Body'
+},
+
+osteichthyes:{
+body:'Do you want to have fins on bones or lobes?'
+option1:'rayFins'
+option2:'lobeFins'
+button1txt:'Ray Fins'
+button2txt:'Lobe Fins'
+},
+
+sarcopterygii:{
+body:'Do you want to have limbs with digits or without digits?'
+option1:'limbsWithDigits'//tetrapodomorpha
+option2:'limbsWithoutDigits'//dipnomorpha
+button1txt:'Limbs With Digits'
+button2txt:'Limbs Without Digits'
+},
+
+tetrapodomorpha:{
+body:'Do you want to lay eggs on land or in water?'
+option1:'amnioticEgg'//mammals,reptiles/birds
+option2:'noAmnioticEgg'//amphibia
+button1txt:'On Land'
+button2txt:'In Water'
+},
+
+amphibia:{
+body:'Do you want to lose your limbs or keep them?'
+option1:'loseLimbs'//caecillians
+option2:'keepLimbs'//salientia,caudata
+button1txt:'Lose Limbs'
+button2txt:'Keep Limbs'
+},
+
+salientiaCaudata:{
+body:'Do you want to have a long body or a short body?'
+option1:'shortBody'//salientia
+option2:'longBody'//caudata
+button1txt:'Short Body'
+button2txt:'Long Body'
+},
+
+mammReptBirds:{
+body:'Do you want to produce milk for your young or no?'
+option1:'milk'//mammals
+option2:'noMilk'//reptiles/birds
+button1txt:'Milk'
+button2txt:'No Milk'
+},
+
+reptilesBirds:{
+body:'Do you want to have a short body or a long body?'
+option1:'longBody'//squamata
+option2:'shortBody'//archosauromorpha
+button1txt:'Long Body'
+button2txt:'Short Body'
+},
+
+squamata:{
+body:'Do you want to lose your limbs or keep them?'
+option1:'keepLimbs'//lizards
+option2:'loseLimbs'//snakes
+button1txt:'Keep Limbs'
+button2txt:'Lose Limbs'
+},
+
+archosauromorpha:{
+body:'Do you want to have a shell or no?'
+option1:'shell'//testunides
+option2:'noShell'//archosauriformes
+button1txt:'shell'
+button2txt:'No Shell'
+},
+
+archosauriformes:{
+body:'Do you want to have bony armor or no?'
+option1:'bonyArmor'//crocodilia
+option2:'noBonyArmor'//aves
+button1txt:'bonyArmor'
+button2txt:'noBonyArmor'
+},
+
+aves:{
+body:'Do you want to have a bird-like tail or a lizard-like tail?'
+option1:'lizardTail'//sauriurae
+option2:'birdTail'//ornithurae
+button1txt:'Lizard Tail'
+button2txt:'Bird Tail'
+},
+
+ornithurae:{
+body:'Do you want to be aquatic or non-aquatic?'
+option1:'aquatic'//hesperornithes
+option2:'nonAquatic'//neornithes
+button1txt:'Aquatic'
+button2txt:'Non-Aquatic'
+},
+
+neornithes:{
+body:'Do you want to be able to fly or no?'
+option1:'flightless'//palaeognatha
+option2:'flying'//neognatha
+button1txt:'Flightless'
+button2txt:'Flying'
+},
+
+neognatha:{
+body:'Do you want to lay 1-2 eggs at a time or 5-10?'
+option1:'smallClutches'//neoaves
+option2:'largeClutches'//galloanserae
+button1txt:'1-2'
+button2txt:'5-10'
+},
+
+neoaves:{
+body:''
+option1:''
+option2:''
+button1txt:''
+button2txt:''
+},
+
+galloanserae:{
+body:'Do you want to live only on land or on land and in water?'
+option1:'landfowl'//galliformes
+option2:'waterfowl'//anseriformes
+button1txt:'Only on Land'
+button2txt:'On Land and in Water'
+},
+
+galliformes:{
+body:'Do you want your young to hatch mature or immature?'
+option1:'immatureHatching'//cracidae
+option2:'matureHatching'//megapodiidae
+button1txt:'Immature Hatching'
+button2txt:'MatureHatching'
+},
+
+cracidae:{
+body:'Do you want to have a bald neck or a feathered neck?'
+option1:'baldNeck'//numididae
+option2:'featheredNeck'//gallimorphae
+button1txt:'Bald Neck'
+button2txt:'Feathered Neck'
+},
+
+gallimorphae:{
+body:'Do you want to be from the Old World or the New World?'
+option1:'oldWorld'//phasianidae
+option2:'newWorld'//odontophoridae
+button1txt:'Old World'
+button2txt:'New World'
+},
+
+anseriformes:{
+body:'Do you want to have hooks/barbs on your ribs or no?'
+option1:'uncinateRibs'//anatidae
+option2:'noUncinateRibs'//anhimidae
+button1txt:'Hooks/Barbs on Ribs'
+button2txt:'No Hooks/Barbs on Ribs'
+},
+
+mammals:{
+body:'Do you want to lay eggs or no?'
+option1:'eggs'//monotremes
+option2:'noEggs'//placental
+button1txt:'Eggs'
+button2txt:'No Eggs'
+},
+
+placental:{
+body:'Do you want your young to be born mature or immature?'
+option1:'mature'//eutheria
+option2:'immature'//marsupial
+button1txt:'Mature'
+button2txt:'Immature'
+},
+
+marsupial:{
+body:'Do you want to be from the Americas or Australia/Asia?'
+option1:'americas'//didelphimorphia
+option2:'australiaAsia'//austPauc
+button1txt:'Americas'
+button2txt:'Australia/Asia'
+},
+
+austPauc:{
+body:'Do you want to be from South America or Australia?'
+option1:'southAmerica'//paucituberculata
+option2:'australia'//australidelphia
+button1txt:'South America'
+button2txt:'Australia'
+},
+
+australidelphia:{
+body:'Do you want to be large or small?'
+option1:'large'//diprotodontia
+option2:'small'//dasyNotoPeram
+button1txt:'Large'
+button2txt:'Small'
+},
 
 eutheria:{
 body:'Do you want to be from South America/Africa or somewere else?'
@@ -508,4 +445,3 @@ option2:'terrestrial'//musteloidea
 button1txt:'Semiaquatic'
 button2txt:'Terrestrial'
 },
->>>>>>> f122a9e169b1fc99867ea1be84b3f6f5625c37bf

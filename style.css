@@ -44,9 +44,18 @@ node {
     }
     h1, h2, h3, h4, h5, h6, li{
         font-family: 'Raleway', sans-serif;
+        font-weight: 200;
         margin-top: 0;
     }
-
+    a:link{
+        text-decoration: none;
+    }
+    a:visited {
+        color: white;
+}
+    a{
+        color: white;
+    }
     .sidenav {
         height: 100%;
         width: 0;
@@ -78,7 +87,7 @@ node {
     }
 
     .sidenav a:hover, .offcanvas a:focus{
-        color: #f1f1f1;
+        color: #999;
         padding-left: 50px;
     }
 
@@ -172,14 +181,14 @@ padding: 1em;
       height: 1000px;
   }
   .title{
-      font-size: 6em;
+      font-size: 8em;
       padding-left: 80px;
       padding-top: 250px;
       color: white;
-  font-family: 'Yatra One', cursive;
-font-family: 'Kavoon', cursive;
-font-family: 'Luckiest Guy', cursive;
-  }
+    font-family: 'Yatra One', cursive;
+    font-family: 'Kavoon', cursive;
+    font-family: 'Luckiest Guy', cursive;
+}
   .about-jumbotron{
       background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
       background-attachment: fixed;
@@ -213,12 +222,21 @@ font-family: 'Luckiest Guy', cursive;
   .moreinfo-jumbotron{
       background-image: url(https://static.pexels.com/photos/67751/pexels-photo-67751.jpeg);
       background-attachment: fixed;
-      background-position: center;
       background-size: cover;
-      color: white;
+      height: 1000px;
   }
   .moreinfo-jumbotron h1{
       padding-right: 50px;
+  }
+  .box{
+      background-color: white;
+      color: #333;
+      opacity: .8;
+      transition: .5s;
+      padding: 20px 30px;
+  }
+  .box:hover{
+      background-color: #00BCD4;
   }
   .game-jumbotron{
       background-image: url(https://static.pexels.com/photos/130621/pexels-photo-130621.jpeg);
@@ -253,14 +271,21 @@ font-family: 'Luckiest Guy', cursive;
       list-style: none;
       margin: auto auto;
       padding: auto 0;
-      color: white;
-      font-weight: 200;
+      color: black;
+      font-weight: 100;
   }
   ul{
       padding-left: 0;
   }
   .thumbnail{
-      background-color: #444;
+      background-color: #ddd;
       border-radius: 0;
       padding: 0;
+      transition: .4s;
+  }
+  .thumbnail:hover{
+      background-color: #bbb;
+  }
+  .jumbotron h1{
+      font-size: 7em;
   }

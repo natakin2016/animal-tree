@@ -4,7 +4,7 @@
 
 			$stateProvider
 				.state('home', {
-					url: '/home',
+					url: '',
 					template: '<home-component></home-component>'
 				})
 				.state('gol', {

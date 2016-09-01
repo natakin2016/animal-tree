@@ -271,16 +271,20 @@ padding: 1em;
       list-style: none;
       margin: auto auto;
       padding: auto 0;
-      color: white;
+      color: black;
       font-weight: 100;
   }
   ul{
       padding-left: 0;
   }
   .thumbnail{
-      background-color: #444;
+      background-color: #ddd;
       border-radius: 0;
       padding: 0;
+      transition: .4x;
+  }
+  .thumbnail:hover{
+      background-color: #bbb;
   }
   .jumbotron h1{
       font-size: 7em;

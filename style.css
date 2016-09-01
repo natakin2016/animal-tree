@@ -193,6 +193,7 @@ padding: 1em;
       /*background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);*/
     background-image:url(https://static.pexels.com/photos/60692/bird-animal-nature-strauss-60692.jpeg);
       background-attachment: fixed;
+      background-position: center;
       background-size: cover;
       color: white;
   }

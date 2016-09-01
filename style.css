@@ -291,3 +291,6 @@ padding: 1em;
   .jumbotron h1{
       font-size: 7em;
   }
+  .class-background{
+      background-color: #bbb;
+  }

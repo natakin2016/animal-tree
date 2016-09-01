@@ -31,6 +31,11 @@
 					url: '/termpage',
 					template: '<termpage-component></termpage-component>'
 				})
+				.state('questions', {
+					url: '/questions',
+					template: '<questions-component></questions-component>'
+				})
+
 
 		})
 } ());

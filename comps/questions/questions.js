@@ -29,8 +29,8 @@ function defineEnds(arr){
             console.log(spot.option2+"is a End Create End obj for it")
         }
     }
-
 }
+defineEnds(questions)
 var questions = [{
     name:{
         body:'',

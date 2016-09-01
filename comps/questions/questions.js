@@ -333,226 +333,162 @@ button2txt:'Somewhere Else'
 
 atlantogenata:{
 body:'Do you want to be from Africa or South America?'
-option1:''
-option2:''
+option1:'africa'//afrotheria
+option2:'southAmerica'//xenarthra
+button1txt:'Africa'
+button2txt:'South America'
+},'   
     
-    
-    if(true){
-        console.log("You are from Africa")
-        afrotheria()
-    }
-    else(false){
-        console.log("You are from South America")
-        xenarthra()
-    }
-}
-function boreoeutheria(){
-//Do you want to be from Europe or Laurasia?
-    if(true){
-        console.log("You are from Europe")
-        euarchontoglires()
-    }
-    else(false){
-        console.log("You are from Laurasia")
-        laurasiatheria()//l.343
-    }
-}
-function euarchontoglires(){
-//Do you want to have big feet or no?
-    if(true){
-        console.log("You have big feet")
-        glires()//
-    }
-    else(false){
-        console.log("You do not have big feet")
-        euarchonta()
-    }
-}
-function euarchonta(){
-//Do you want to have flaps of skin for flying between your fore- and hind-limbs?
-    if(true){
-        console.log("You have skin flaps for gliding")
-        dermoptera()//
-    }
-    else(false){
-        console.log("You do not have skin flaps for gliding")
-        primates()//
-    }
-}
-function laurasiatheria(){
-//Do you want males of your species to have external or internal reproductive organs?
-    if(true){
-        console.log("Your males have external reproductive organs")
-        scrotifera()
-    }
-    else(false){
-        console.log("Your males have internal reproductive organs")
-        insecEulip()//
-    }
-}
-function scrotifera(){
-//Do you want to have wings or no?
-    if(true){
-        console.log("You have wings")
-        chiroptera()//
-    }
-    else(false){
-         console.log("You do not have wings")
-         fereuungulata()
-    }
-}
-function  fereuungulata(){
-//Do you want to have hooves or no?
-    if(true){
-        console.log("You have hooves")
-        ungulate()
-    }
-    else(false){
-        console.log("You do not have hooves")
-        ferae()//l.398
-    }
-}
-function ungulate(){
-//Do you want to have an even number of toes or an odd number?
-    if(true){
-        console.log("You have an even number of toes")
-        artiodactyla()
-    }
-    else(false){
-        console.log("You have an odd number of toes")
-        perissodactyla()//
-    }
-}
-function artiodactyla(){
-//Do you want to live in water or on land?
-    if(true){
-        console.log("You are marine")
-        cetacea()//
-    }
-    else(false){
-        console.log("You are terrestrial")
-        artiodactyla2()//
-    }
-}
-function ferae(){
-//Do you want to have scales or no?
-    if(true){
-        console.log("You have scales")
-        pholidota()//
-    }
-    else(false){
-        console.log("You do not have scales")
-        carnivora()
-    }
-}
-function carnivora(){
-//Do you want your middle & inner ear to be in a one-chambered bony structure or two-chambered?
-    if(true){
-        console.log("You have single-chambered auditory bullae")
-        caniformia()//l.476
-    }
-    else(false){
-        console.log("You have double-chambered auditory bullae")
-        feliformia()
-    }
-}
-function feliformia(){
-//Do you want to have highly specialized scent glands or no?
-    if(true){
-        	console.log("You have highly specialized scent glands")
-            nandiniidae()//
-    }
-    else(false){
-       console.log("You do not have highly specialized scent glands")
-       felVivHyaHerpEup()
-    }
-}
-function felVivHyaHerpEup(){
-//Do you want to have four toes on your hind feet or five?
-    if(true){
-        console.log("You have four-toed hind feet")
-        feldiae()//
-    }
-    else(false){
-        console.log("You have five-toed hind feet")
-        vivHyaHerpEup()
-    }
-}
-function vivHyaHerpEup(){
-//Do you want highly developed crushing teeth or underdeveloped? 
-    if(true){
-        console.log("You have highly developed carnassial teeth")
-        viverridae()//
-    }
-    else(false){
-        console.log("You have underdeveloped carnassial teeth")
-        hyaHerpEup()
-    }
-}
-function hyaHerpEup(){
-//Do you want to be dog-like or cat-like?
-    if(true){
-        console.log("You are dog-like")
-        hyaenidae()//
-    }
-    else(false){
-        console.log("You are cat-like")
-        herpEup()
-    }
-}
-function herpEup(){
-//Do you wan to be from Eurasia/Africa or Madagascar?
-    if(true){
-        console.log("You originated in Eurasia/Africa") 
-        herpestidae()//
-    }
-    else(false){
-        console.log("You originated in Madagascar")
-        eupleridae()//
-    }
-}
 
-function caniformia(){
-//Do you want to lose or keep your 3rd upper molar?
-    if(true){
-      console.log("You have no third upper molar")
-      canidae()  
-    }
-    else(false){
-       console.log("You kept your third upper molar")
-       arctoidea() //l.498
-    }
-}
-function canidae(){
-//Do you want to be able to partially retract your claws or want them to be fixed in place?
-    if(true){
-        console.log("You can partially retract your claws")
-        foxes()//
-    }
-    else(false){
-        console.log("You cannot retract your claws")
-        dogs()//
-    }
-}
-function arctoidea(){
-//Do you want to be an omnivore or a carnivore?
-    if(true){
-        console.log("You are an omnivore")
-        bears()//
-    }
-    else(false){
-        console.log("You are a carnivore")
-        pinniMust()
-    }
-}
-function pinniMust(){
-//Do you want to be semiaquatic or terrestrial?
-    if(true){
-        console.log("You live both on land and in water")
-        pinnipedia()//
-    }
-    else(false){
-        console.log("You live only on land")
-        musteloidea()//
-    }
-}
+boreoeutheria:{
+body:'Do you want to be from Europe or Laurasia?'
+option1:'europe'//euarchontoglires
+option2:'laurasia'//laurasiatheria
+button1txt:'Europe'
+button2txt:'Laurasia'
+},
+
+
+euarchontoglires:{
+body:'Do you want to have big feet or no?'
+option1:'bigFeet'//glires
+option2:'smallFeet'//euarchonta
+button1txt:'Big Feet'
+button2txt:'Small Feet'
+},
+
+euarchonta:{
+body:'Do you want to have flaps of skin for flying between your fore- and hind-limbs?'
+option1:'skinFlaps'//dermoptera
+option2:'noSkinFlaps'//primates
+button1txt:'Skin Flaps'
+button2txt:'No Skin Flaps'
+},
+
+laurasiatheria:{
+body:'Do you want males of your species to have external or internal reproductive organs?'
+option1:'internal'//insecEulip
+option2:'external'//scrotifera
+button1txt:'Internal'
+button2txt:'External'
+},
+
+scrotifera:{
+body:'Do you want to have wings or no?'
+option1:'wings'//chiroptera
+option2:'noWings'//fereuungulata
+button1txt:'Wings'
+button2txt:'No Wings'
+},
+
+fereuungulata:{
+body:'Do you want to have hooves or no?'
+option1:'hooves'//ungulate
+option2:'noHooves'//ferae
+button1txt:'Hooves'
+button2txt:'No Hooves'
+},
+
+ungulate:{
+body:'Do you want to have an even number of toes or an odd number?'
+option1:'even'//artiodactyla
+option2:'odd'//perissodactyla
+button1txt:'Even'
+button2txt:'Odd'
+},
+
+artiodactyla:{
+body:'Do you want to live in water or on land?'
+option1:'water'//cetacea
+option2:'land'//artiodactyla2
+button1txt:'Water'
+button2txt:'Land'
+},
+
+ferae:{
+body:'Do you want to have scales or no?'
+option1:'scales'//pholidota
+option2:'noScales'//carnivora
+button1txt:'Scales'
+button2txt:'No Scales'
+},
+
+carnivora:{
+body:'Do you want your middle & inner ear to be in a one-chambered bony structure or two-chambered?'
+option1:'oneChambered'//caniformia
+option2:'twoChambered'//feliformia
+button1txt:'One-Chambered'
+button2txt:'Two-Chambered'
+},
+
+feliformia:{
+body:'Do you want to have highly specialized scent glands or no?'
+option1:'highlySpecialized'//nandiniidae
+option2:'notSpecialized'//felVivHyaHerpEup
+button1txt:'Highly Specialized'
+button2txt:'Not Highly Specialized'
+},
+
+felVivHyaHerpEup:{
+body:'Do you want to have four toes on your hind feet or five?'
+option1:'four'//feldiae
+option2:'five'//vivHyaHerpEup
+button1txt:'Four'
+button2txt:'Five'
+},
+
+vivHyaHerpEup:{
+body:/Do you want highly developed crushing teeth or underdeveloped?'
+option1:'highlyDeveloped'//viverridae
+option2:'underdeveloped'//hyaHerpEup
+button1txt:'Highly Developed'
+button2txt:'Underdeveloped'
+},
+
+hyaHerpEup:{
+body:'Do you want to be dog-like or cat-like?'
+option1:'dogLike'//hyaenidae
+option2:'catLike'//herpEup
+button1txt:'Dog-Like'
+button2txt:'Cat-Like'
+},
+
+herpEup:{
+body:'Do you want to be from Eurasia/Africa or Madagascar?'
+option1:'eurasiaAfrica'//herpestidae
+option2:'madagascar'//eupleridae
+button1txt:'Eurasia/Africa'
+button2txt:'Madagascar'
+},
+
+caniformia:{
+body:'Do you want to lose or keep your 3rd upper molar?'
+option1:'lose'//canidae
+option2:'keep'//arctoidea
+button1txt:'Lose'
+button2txt:'Keep'
+},
+
+canidae:{
+body:'Do you want to be able to partially retract your claws or want them to be fixed in place?'
+option1:'retract'//foxes
+option2:'fixed'//dods
+button1txt:'Retract'
+button2txt:'Fixed'
+},
+
+arctoidea:{
+body:'Do you want to be an omnivore or a carnivore?'
+option1:'omnivore'//bears
+option2:'carnivore'//pinniMust
+button1txt:'Omnivore'
+button2txt:'Carnivore'
+},
+
+pinniMust:{
+body:'Do you want to be semiaquatic or terrestrial?'
+option1:'semiaquatic'//pinnipedia
+option2:'terrestrial'//musteloidea
+button1txt:'Semiaquatic'
+button2txt:'Terrestrial'
+},

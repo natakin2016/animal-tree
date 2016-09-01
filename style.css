@@ -42,11 +42,20 @@ node {
    body {
     font-family: 'Raleway', sans-serif;
     }
-    h1, h2, h3, h4, h5, h6{
+    h1, h2, h3, h4, h5, h6, li{
         font-family: 'Raleway', sans-serif;
+        font-weight: 200;
         margin-top: 0;
     }
-
+    a:link{
+        text-decoration: none;
+    }
+    a:visited {
+        color: white;
+}
+    a{
+        color: white;
+    }
     .sidenav {
         height: 100%;
         width: 0;
@@ -78,7 +87,7 @@ node {
     }
 
     .sidenav a:hover, .offcanvas a:focus{
-        color: #f1f1f1;
+        color: #999;
         padding-left: 50px;
     }
 
@@ -159,7 +168,7 @@ padding: 1em;
   
 
   .infobody{
-      background-image: url(https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg);
+      /*background-image: url(https://static.pexels.com/photos/1562/italian-landscape-mountains-nature.jpg);*/
       background-attachment: fixed;
       background-size: cover;
       background-position: center;
@@ -172,16 +181,17 @@ padding: 1em;
       height: 1000px;
   }
   .title{
-      font-size: 6em;
+      font-size: 8em;
       padding-left: 80px;
       padding-top: 250px;
       color: white;
-  font-family: 'Yatra One', cursive;
-font-family: 'Kavoon', cursive;
-font-family: 'Luckiest Guy', cursive;
-  }
+    font-family: 'Yatra One', cursive;
+    font-family: 'Kavoon', cursive;
+    font-family: 'Luckiest Guy', cursive;
+}
   .about-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      /*background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);*/
+    background-image:url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRDYLN1VsrV82VdkZmnRHYWMb63rt-NVoxhhBsIiRu-OhAmwxe);
       background-attachment: fixed;
       background-size: cover;
       color: white;
@@ -213,12 +223,22 @@ font-family: 'Luckiest Guy', cursive;
   .moreinfo-jumbotron{
       background-image: url(https://static.pexels.com/photos/67751/pexels-photo-67751.jpeg);
       background-attachment: fixed;
-      background-position: center;
       background-size: cover;
-      color: white;
+      height: 1000px;
   }
   .moreinfo-jumbotron h1{
       padding-right: 50px;
+  }
+  .box{
+      background-color: white;
+      color: #333;
+      opacity: .8;
+      transition: .5s;
+      padding: 20px 30px;
+      font-size: 10vw;
+  }
+  .box:hover{
+      background-color: #00BCD4;
   }
   .game-jumbotron{
       background-image: url(https://static.pexels.com/photos/130621/pexels-photo-130621.jpeg);
@@ -247,4 +267,27 @@ font-family: 'Luckiest Guy', cursive;
   }
   .term-jumbotron h1{
       padding-right: 50px;
+  }
+  .class li{
+      font-size: 1.5em;
+      list-style: none;
+      margin: auto auto;
+      padding: auto 0;
+      color: black;
+      font-weight: 100;
+  }
+  ul{
+      padding-left: 0;
+  }
+  .thumbnail{
+      background-color: #ddd;
+      border-radius: 0;
+      padding: 0;
+      transition: .4s;
+  }
+  .thumbnail:hover{
+      background-color: #bbb;
+  }
+  .jumbotron h1{
+      font-size: 7em;
   }

@@ -190,7 +190,8 @@ padding: 1em;
     font-family: 'Luckiest Guy', cursive;
 }
   .about-jumbotron{
-      background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);
+      /*background-image: url(https://static.pexels.com/photos/129743/pexels-photo-129743.jpeg);*/
+    background-image:url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRRDYLN1VsrV82VdkZmnRHYWMb63rt-NVoxhhBsIiRu-OhAmwxe);
       background-attachment: fixed;
       background-size: cover;
       color: white;

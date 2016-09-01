@@ -281,7 +281,7 @@ padding: 1em;
       background-color: #ddd;
       border-radius: 0;
       padding: 0;
-      transition: .4x;
+      transition: .4s;
   }
   .thumbnail:hover{
       background-color: #bbb;

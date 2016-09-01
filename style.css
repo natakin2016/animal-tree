@@ -234,6 +234,7 @@ padding: 1em;
       opacity: .8;
       transition: .5s;
       padding: 20px 30px;
+      font-size: 10vw;
   }
   .box:hover{
       background-color: #00BCD4;

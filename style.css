@@ -296,3 +296,10 @@ padding: 1em;
   .class-background{
       background-color: #bbb;
   }
+  /*below is for phyllum fun fact div  STYLE NOT WORKING!!  EFF!!*/
+  .phyllumphun{
+      font: 5em;
+  }
+  .phyllumphun a{
+color: blueviolet;
+  }

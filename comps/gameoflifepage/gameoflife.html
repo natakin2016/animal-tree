@@ -1,13 +1,36 @@
-    <script src="http://d3js.org/d3.v3.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-     <div class="jumbotron game-jumbotron">
-        <h1 class="title text-right">GAME OF LIFE</h1>
-    </div>
-    <h1>Loaded component</h1>
+<script src="http://d3js.org/d3.v3.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<div class="jumbotron game-jumbotron">
+    <h1 class="title text-right">GAME OF LIFE</h1>
+</div>
+<div align="center">
+<h2>Conway's Game of Life is a “zero-player’ simulation game analogous with the rise, fall and alterations of a society of living organisms.</h2></div><br>
+<center><h2><strong>Rules for Game of Life</strong></h2></center>
+<h3><center><table style="width: 75%">
+    <tr>
+        <th>Born</th>
+        <th>Survives</th>
+        <th>Dies</th>
+        <th>Dies</th>
+    </tr>
+    <tr>
+        <td>Exactly 3 neighbors</td>
+        <td>2-3 neighbors</td>
+        <td>4 or more neighbors</td>
+        <td>1 or none neighbors</td>
+    </tr>
+    <tr>
+        <td>Balanced</td>
+        <td>Balanced</td>
+        <td>Overpopulated</td>
+        <td>Solitude</td>
+    </tr>
+</table></center></h3>
 
-    
-    <script>
+
+
+<script>
         console.log('Code Starts')
         var ConwaysGameOfLife = function(options) {
 
@@ -210,5 +233,3 @@
         game.randomlyPopulate()
         
     </script>
-
-

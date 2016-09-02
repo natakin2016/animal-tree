@@ -215,7 +215,8 @@ padding: 1em;
       background-attachment: fixed;
       background-attachment: fixed;
       background-position: center;
-      background-size: cover;
+      /*background-size: cover;*/
+       background-size: 100% 70%;
       color: white;
   }
   .vocab-jumbotron h1{

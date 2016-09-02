@@ -22,15 +22,17 @@
         <a ui-sref="moreinfo" onclick="closeNav()">Play Game</a>
         <a ui-sref="vocab" onclick="closeNav()">Classifying</a>
         <a ui-sref="term" onclick="closeNav()">Terms</a>
+        <a ui-sref="questions" onclick="closeNav()">Questions</a>
     </div>
 
     <ui-view></ui-view>
 
     <!--Scripts Go Below-->
     <!--CDNs-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" ></script>
     <script src="http://d3js.org/d3.v3.js"></script>
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
     <script src="init.js"></script>
     <script src="app/config/routes.js"></script>
 
@@ -44,6 +46,7 @@
     <script src="comps/vocabularypage/vocab.js"></script>
     <script src="comps/home/home.js"></script>
     <script src="comps/termpage/term.js"></script>
+    <script src="comps/questions/questions.js"></script>
 
 
     <!--UTILS-->
